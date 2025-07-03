@@ -1,4 +1,5 @@
 # w3MigratingBootstrap
+
 Migrating Bootstraps to my Multiple Pages
 
 ## Multi-Page Website with Bootstrap 5
@@ -48,32 +49,38 @@ w3MigratingBootstrap/
 ### Features & Functionality
 
 #### Navigation
+
 - Fixed top navigation with responsive collapse menu
 - Active page highlighting
 - Smooth scroll behavior
 
 #### Home Page
+
 - Hero section with call-to-action buttons
 - Feature cards with hover effects
 - Gradient background design
 
 #### About Page
+
 - Company story and mission/vision cards
 - Team member profiles
 - Professional layout
 
 #### Services Page
+
 - Service cards with detailed descriptions
 - Process workflow visualization
 - Interactive hover effects
 
 #### Contact Page
+
 - Contact form with validation
 - Business information cards
 - Map placeholder section
 - Sticky sidebar on larger screens
 
 #### JavaScript Features
+
 - Form validation and submission handling
 - Scroll animations with Intersection Observer
 - Back-to-top button
@@ -81,6 +88,7 @@ w3MigratingBootstrap/
 - Active navigation highlighting
 
 #### CSS Features
+
 - Custom gradient backgrounds
 - Hover animations and transitions
 - Responsive design utilities
@@ -118,4 +126,4 @@ The website is easily customizable:
 
 ---
 
-Built with ❤️ using Bootstrap 5 and modern web technologies. 
+Built with ❤️ using Bootstrap 5 and modern web technologies.
