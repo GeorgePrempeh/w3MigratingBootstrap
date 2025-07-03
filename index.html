@@ -12,6 +12,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
@@ -54,26 +58,82 @@
       <div class="container">
         <div class="row align-items-center min-vh-100">
           <div class="col-lg-6">
-            <h1 class="display-4 fw-bold mb-4">
-              Welcome to Our Amazing Website
+            <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInUp">
+              Transform Your Digital Future
             </h1>
-            <p class="lead mb-4">
-              Discover innovative solutions and exceptional services that will
-              transform your business and help you achieve your goals.
+            <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+              We create innovative digital solutions that drive growth, enhance user experiences, and transform businesses. Let us help you build something extraordinary.
             </p>
-            <div class="d-flex gap-3">
-              <a href="services.html" class="btn btn-light btn-lg"
-                >Our Services</a
-              >
-              <a href="contact.html" class="btn btn-outline-light btn-lg"
-                >Get In Touch</a
-              >
+            <div class="d-flex flex-wrap gap-3 mb-4 animate__animated animate__fadeInUp animate__delay-2s">
+              <a href="services.html" class="btn btn-light btn-lg px-4 py-3">
+                <i class="fas fa-cogs me-2"></i>Our Services
+              </a>
+              <a href="contact.html" class="btn btn-outline-light btn-lg px-4 py-3">
+                <i class="fas fa-envelope me-2"></i>Get Started
+              </a>
+            </div>
+            <div class="d-flex align-items-center gap-4 animate__animated animate__fadeInUp animate__delay-3s">
+              <div class="text-center">
+                <h4 class="fw-bold mb-0">500+</h4>
+                <small>Projects Completed</small>
+              </div>
+              <div class="text-center">
+                <h4 class="fw-bold mb-0">98%</h4>
+                <small>Client Satisfaction</small>
+              </div>
+              <div class="text-center">
+                <h4 class="fw-bold mb-0">24/7</h4>
+                <small>Support Available</small>
+              </div>
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="text-center">
-              <i class="fas fa-laptop-code display-1 mb-4"></i>
-              <h3>Building the Future</h3>
+            <div class="text-center position-relative">
+              <div class="hero-image-container">
+                <i class="fas fa-laptop-code display-1 mb-4 text-light animate__animated animate__pulse animate__infinite"></i>
+                <div class="floating-elements">
+                  <i class="fas fa-rocket floating-icon"></i>
+                  <i class="fas fa-shield-alt floating-icon"></i>
+                  <i class="fas fa-chart-line floating-icon"></i>
+                </div>
+              </div>
+              <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Building Tomorrow's Solutions Today</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <i class="fas fa-users text-primary display-4 mb-3"></i>
+              <h3 class="fw-bold text-primary counter" data-target="1250">0</h3>
+              <p class="text-muted">Happy Clients</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <i class="fas fa-project-diagram text-success display-4 mb-3"></i>
+              <h3 class="fw-bold text-success counter" data-target="850">0</h3>
+              <p class="text-muted">Projects Delivered</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <i class="fas fa-award text-warning display-4 mb-3"></i>
+              <h3 class="fw-bold text-warning counter" data-target="25">0</h3>
+              <p class="text-muted">Awards Won</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <i class="fas fa-clock text-info display-4 mb-3"></i>
+              <h3 class="fw-bold text-info counter" data-target="5">0</h3>
+              <p class="text-muted">Years Experience</p>
             </div>
           </div>
         </div>
@@ -84,47 +144,218 @@
     <section class="py-5">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="display-5 fw-bold">Why Choose Us?</h2>
+          <h2 class="display-5 fw-bold">Why Choose Our Platform?</h2>
           <p class="lead text-muted">
-            We provide exceptional value through our core strengths
+            We deliver exceptional value through innovation, expertise, and dedication
           </p>
+          <div class="divider mx-auto"></div>
         </div>
         <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
+          <div class="col-lg-4 col-md-6">
+            <div class="feature-card card h-100 border-0 shadow-sm">
               <div class="card-body text-center p-4">
-                <i class="fas fa-shield-alt text-primary display-4 mb-3"></i>
-                <h5 class="card-title">Secure & Reliable</h5>
-                <p class="card-text">
-                  Our solutions are built with security and reliability at the
-                  core, ensuring your peace of mind.
+                <div class="feature-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h5 class="card-title fw-bold">Enterprise Security</h5>
+                <p class="card-text text-muted">
+                  Bank-grade security protocols with end-to-end encryption and advanced threat protection to keep your data safe.
                 </p>
+                <ul class="list-unstyled text-start">
+                  <li><i class="fas fa-check text-success me-2"></i>256-bit SSL Encryption</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Regular Security Audits</li>
+                  <li><i class="fas fa-check text-success me-2"></i>GDPR Compliant</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
+          <div class="col-lg-4 col-md-6">
+            <div class="feature-card card h-100 border-0 shadow-sm">
               <div class="card-body text-center p-4">
-                <i class="fas fa-rocket text-primary display-4 mb-3"></i>
-                <h5 class="card-title">Fast Performance</h5>
-                <p class="card-text">
-                  Experience lightning-fast performance with our optimized
-                  solutions and cutting-edge technology.
+                <div class="feature-icon bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <h5 class="card-title fw-bold">Lightning Fast</h5>
+                <p class="card-text text-muted">
+                  Optimized performance with global CDN, caching, and cutting-edge technology for unmatched speed.
                 </p>
+                <ul class="list-unstyled text-start">
+                  <li><i class="fas fa-check text-success me-2"></i>99.9% Uptime SLA</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Global CDN Network</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Advanced Caching</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
+          <div class="col-lg-4 col-md-6">
+            <div class="feature-card card h-100 border-0 shadow-sm">
               <div class="card-body text-center p-4">
-                <i class="fas fa-headset text-primary display-4 mb-3"></i>
-                <h5 class="card-title">24/7 Support</h5>
-                <p class="card-text">
-                  Our dedicated support team is available around the clock to
-                  assist you whenever you need help.
+                <div class="feature-icon bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <h5 class="card-title fw-bold">24/7 Expert Support</h5>
+                <p class="card-text text-muted">
+                  Round-the-clock support from our team of experts ready to help you succeed at every step.
                 </p>
+                <ul class="list-unstyled text-start">
+                  <li><i class="fas fa-check text-success me-2"></i>Live Chat Support</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Phone & Email</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Dedicated Account Manager</li>
+                </ul>
               </div>
             </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="feature-card card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="feature-icon bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h5 class="card-title fw-bold">Mobile Optimized</h5>
+                <p class="card-text text-muted">
+                  Fully responsive design that works perfectly on all devices and screen sizes.
+                </p>
+                <ul class="list-unstyled text-start">
+                  <li><i class="fas fa-check text-success me-2"></i>Responsive Design</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Mobile Apps Available</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Touch Optimized</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="feature-card card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="feature-icon bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h5 class="card-title fw-bold">Advanced Analytics</h5>
+                <p class="card-text text-muted">
+                  Comprehensive analytics and reporting tools to track performance and make data-driven decisions.
+                </p>
+                <ul class="list-unstyled text-start">
+                  <li><i class="fas fa-check text-success me-2"></i>Real-time Dashboard</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Custom Reports</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Data Export</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="feature-card card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="feature-icon bg-purple text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h5 class="card-title fw-bold">Easy Integration</h5>
+                <p class="card-text text-muted">
+                  Seamless integration with your existing tools and workflows through our robust API ecosystem.
+                </p>
+                <ul class="list-unstyled text-start">
+                  <li><i class="fas fa-check text-success me-2"></i>RESTful APIs</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Third-party Integrations</li>
+                  <li><i class="fas fa-check text-success me-2"></i>Developer Resources</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">What Our Clients Say</h2>
+          <p class="lead text-muted">Don't just take our word for it</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="testimonial-card card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="stars mb-3">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p class="card-text">"Exceptional service and outstanding results. They transformed our digital presence completely!"</p>
+                <div class="d-flex align-items-center">
+                  <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-0">Sarah Johnson</h6>
+                    <small class="text-muted">CEO, TechCorp</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-card card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="stars mb-3">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p class="card-text">"Professional, reliable, and innovative. Couldn't ask for a better partner for our projects."</p>
+                <div class="d-flex align-items-center">
+                  <div class="avatar bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-0">Michael Chen</h6>
+                    <small class="text-muted">CTO, InnovateLab</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-card card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="stars mb-3">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p class="card-text">"Amazing attention to detail and customer service. They exceeded all our expectations!"</p>
+                <div class="d-flex align-items-center">
+                  <div class="avatar bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-0">Emily Rodriguez</h6>
+                    <small class="text-muted">Founder, StartupXYZ</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2 class="display-6 fw-bold mb-3">Ready to Get Started?</h2>
+            <p class="lead mb-0">Join thousands of satisfied customers and transform your business today. Let's build something amazing together.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="contact.html" class="btn btn-light btn-lg px-4 py-3">
+              <i class="fas fa-rocket me-2"></i>Start Your Project
+            </a>
           </div>
         </div>
       </div>

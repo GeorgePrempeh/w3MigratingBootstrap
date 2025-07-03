@@ -86,8 +86,132 @@ body {
     }
 }
 
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
 .fade-in-up {
     animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hero Section Enhancements */
+.hero-image-container {
+    position: relative;
+}
+
+.floating-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.floating-icon {
+    position: absolute;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-icon:nth-child(1) {
+    top: 20%;
+    right: 20%;
+    animation-delay: 0s;
+}
+
+.floating-icon:nth-child(2) {
+    bottom: 30%;
+    left: 15%;
+    animation-delay: 1s;
+}
+
+.floating-icon:nth-child(3) {
+    top: 40%;
+    left: 10%;
+    animation-delay: 2s;
+}
+
+/* Stats Section */
+.stat-card {
+    padding: 2rem 1rem;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.counter {
+    font-size: 3rem;
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+    border-left-color: var(--bs-primary);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.stars i {
+    font-size: 1.2rem;
+}
+
+/* Divider */
+.divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-top: 1rem;
+}
+
+/* Additional Color Classes */
+.bg-purple {
+    background-color: #6f42c1 !important;
+}
+
+.text-purple {
+    color: #6f42c1 !important;
+}
+
+/* Enhanced Buttons */
+.btn-lg {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-lg:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 /* Responsive adjustments */
@@ -106,6 +230,20 @@ body {
     
     .display-5 {
         font-size: 2rem;
+    }
+    
+    .floating-elements {
+        display: none;
+    }
+    
+    .counter {
+        font-size: 2rem;
+    }
+    
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
     }
 }
 

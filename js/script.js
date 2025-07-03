@@ -112,6 +112,118 @@ document.addEventListener('DOMContentLoaded', function() {
     // Loading animation
     window.addEventListener('load', function() {
         document.body.classList.add('loaded');
+        
+        // Initialize counter animations
+        initCounters();
+    });
+
+    // Counter animation function
+    function initCounters() {
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const count = +counter.innerText;
+            const increment = target / speed;
+
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(() => updateCounter(counter, target, speed), 1);
+            } else {
+                counter.innerText = target;
+            }
+        });
+    }
+
+    function updateCounter(counter, target, speed) {
+        const count = +counter.innerText;
+        const increment = target / speed;
+
+        if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(() => updateCounter(counter, target, speed), 1);
+        } else {
+            counter.innerText = target;
+        }
+    }
+
+    // Animate counters when they come into view
+    const counterObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute('data-target'));
+                animateCounter(counter, 0, target, 2000);
+                counterObserver.unobserve(counter);
+            }
+        });
+    }, { threshold: 0.7 });
+
+    // Observe counters
+    const counterElements = document.querySelectorAll('.counter');
+    counterElements.forEach(counter => {
+        counterObserver.observe(counter);
+    });
+
+    // Smooth counter animation
+    function animateCounter(element, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            const current = Math.floor(progress * (end - start) + start);
+            element.textContent = current;
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+
+    // Enhanced card hover effects
+    const featureCards = document.querySelectorAll('.feature-card');
+    featureCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px)';
+            this.style.boxShadow = '0 15px 35px rgba(0,0,0,0.15)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '';
+        });
+    });
+
+    // Testimonial card hover effects
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    testimonialCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+
+    // Add scroll reveal animations
+    const revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-up');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Observe elements for reveal animation
+    const revealElements = document.querySelectorAll('.feature-card, .testimonial-card, .stat-card');
+    revealElements.forEach(element => {
+        revealObserver.observe(element);
     });
 
     // Back to top button (if needed)
