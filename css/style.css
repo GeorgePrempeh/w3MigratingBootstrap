@@ -1,0 +1,169 @@
+/* Custom CSS for Multi-Page Website */
+
+/* Global Styles */
+body {
+    padding-top: 76px; /* Account for fixed navbar */
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 0;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Page Headers */
+.page-header {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Service Cards */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* Process Steps */
+.process-step {
+    width: 60px;
+    height: 60px;
+}
+
+.process-circle {
+    width: 60px;
+    height: 60px;
+}
+
+/* Contact Form */
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Map Placeholder */
+.map-placeholder {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Hover Effects */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .page-header {
+        padding: 100px 0 60px;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+}
+
+/* Utility Classes */
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+/* Social Media Links */
+footer a:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+/* Card Hover Effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* Typography */
+.lead {
+    font-weight: 300;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+/* Custom spacing */
+.py-6 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+/* Contact page specific styles */
+.sticky-top {
+    top: 100px;
+}
+
+/* Team member cards */
+.team-card {
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
